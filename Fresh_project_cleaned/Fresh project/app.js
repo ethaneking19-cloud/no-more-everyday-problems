@@ -1,6 +1,6 @@
 /**
  * Application Logic for "No More Everyday Problems"
- * 10 Complete Problem Guides with Interactive Filters & Local Persistence
+ * 10 Complete Problem Guides with Interactive Filters & Local Persistences
  */
 
 const featuredItems = [
