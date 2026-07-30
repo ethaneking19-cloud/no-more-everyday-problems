@@ -108,12 +108,12 @@ input {
 }
 
 .brand-logo {
-  height: 52px;
+  height: 68px;
   width: auto;
   display: block;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.85);
-  padding: 4px 10px;
+  padding: 3px 8px;
   box-shadow: 0 4px 16px rgba(23, 38, 63, 0.08);
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
