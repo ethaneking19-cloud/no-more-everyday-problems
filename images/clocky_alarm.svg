@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Clocky Alarm">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7fe397" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.16"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#f7f6f0" />
+  <rect x="40" y="40" width="720" height="520" rx="40" fill="url(#grad)" stroke="#dcd8cf" stroke-width="4" />
+  <circle cx="400" cy="300" r="90" fill="#111111" opacity="0.18" />
+  <circle cx="400" cy="300" r="68" fill="none" stroke="#111111" stroke-width="16" />
+  <line x1="400" y1="300" x2="400" y2="250" stroke="#111111" stroke-width="14" stroke-linecap="round" />
+  <line x1="400" y1="300" x2="450" y2="300" stroke="#111111" stroke-width="14" stroke-linecap="round" />
+  <path d="M340 190 L320 150 M460 190 L480 150" stroke="#111111" stroke-width="14" stroke-linecap="round" />
+  <text x="400" y="420" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#111111">Clocky Alarm</text>
+  <text x="400" y="470" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="24" fill="#111111" opacity="0.78">product image</text>
+</svg>
