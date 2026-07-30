@@ -401,7 +401,7 @@ def add_to_appjs(config):
     with open("app.js", "w", encoding="utf-8") as f:
         f.write(content)
     
-    print(f"  ✅ Added to app.js")
+    print(f"  [OK] Added to app.js")
 
 
 def add_to_index(config):
@@ -427,7 +427,7 @@ def add_to_index(config):
     with open("index.html", "w", encoding="utf-8") as f:
         f.write(content)
     
-    print(f"  ✅ Added to index.html problem grid")
+    print(f"  [OK] Added to index.html problem grid")
 
 
 def add_to_sitemap(config):
@@ -449,7 +449,7 @@ def add_to_sitemap(config):
     with open("sitemap.xml", "w", encoding="utf-8") as f:
         f.write(content)
     
-    print(f"  ✅ Added to sitemap.xml")
+    print(f"  [OK] Added to sitemap.xml")
 
 
 # ============================================================
@@ -459,7 +459,7 @@ def add_to_sitemap(config):
 if __name__ == "__main__":
     c = CONFIG
     
-    print(f"\n🚀 Generating page: {c['title']}")
+    print(f"\n>>> Generating page: {c['title']}")
     print(f"   Slug: {c['slug']}.html")
     print(f"   Category: {c['category']}")
     print()
@@ -469,7 +469,7 @@ if __name__ == "__main__":
     filename = f"{c['slug']}.html"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"  ✅ Created {filename}")
+    print(f"  [OK] Created {filename}")
     
     # 2. Add to app.js
     add_to_appjs(c)
@@ -480,7 +480,7 @@ if __name__ == "__main__":
     # 4. Update sitemap
     add_to_sitemap(c)
     
-    print(f"\n✅ Done! New page '{c['slug']}.html' is ready.")
+    print(f"\n[DONE] New page '{c['slug']}.html' is ready.")
     print(f"\nNext steps:")
     print(f"  1. Add product images to images/ folder")
     print(f"  2. Open {c['slug']}.html in your browser to preview")
