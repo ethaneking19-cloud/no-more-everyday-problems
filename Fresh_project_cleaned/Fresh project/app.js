@@ -105,8 +105,8 @@ const featuredItems = [
     pair: "Handheld Steamer + Fabric Spray",
     audience: "Travelers, professionals, and students",
     whyItWins: "Saves 15 minutes of tedious ironing.",
-    image: "images/ExtraCableSet.jpg",
-    category: "car"
+    image: "images/NoMoreWrinkledClothesHome.jpg",
+    category: "home"
   },
   {
     key: "alarm",
@@ -118,7 +118,7 @@ const featuredItems = [
     pair: "Sunrise Clock + Wheel Alarm",
     audience: "Heavy sleepers and early risers",
     whyItWins: "Directly improves sleep quality and energy.",
-    image: "images/DeadPhoneHomeImage.jpg",
+    image: "images/sunrise_clock.jpg",
     category: "tech"
   },
   {
@@ -131,12 +131,11 @@ const featuredItems = [
     pair: "Charcoal Bags + Cedar Inserts",
     audience: "Athletes, workers, and sneakerheads",
     whyItWins: "Reusable for up to 2 years.",
-    image: "images/pet_hair_remover.jpg",
+    image: "images/charcoal_bags.jpg",
     category: "home"
   }
 ];
 
-const featureTarget = document.querySelector("[data-featured-solution]");
 const previewTarget = document.querySelector("[data-hero-preview]");
 const topicButtons = document.querySelectorAll("[data-topic-trigger]");
 
@@ -197,49 +196,7 @@ topicButtons.forEach((button) => {
   });
 });
 
-if (featureTarget) {
-  const currentWeek = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 7));
-  const featured = featuredItems[currentWeek % featuredItems.length];
-
-  featureTarget.innerHTML = `
-    <div class="feature-layout">
-      <div class="panel fade-up">
-        <span class="eyebrow">Top Fix This Week</span>
-        <h2>${featured.title}</h2>
-        <p class="section-copy">${featured.description}</p>
-        <div class="chip-row">
-          <span class="chip chip-accent">${featured.stat}</span>
-          <span class="chip">${featured.pair}</span>
-        </div>
-        <div class="inline-actions" style="margin-top: 1rem;">
-          <a class="button button-primary" href="${featured.href}">Read the Guide</a>
-          <a class="button button-secondary" href="index.html#newsletter">Get Weekly Fixes</a>
-        </div>
-      </div>
-      <div class="panel fade-up delay-1">
-        <span class="eyebrow">Why people like it</span>
-        <div class="feature-points">
-          <div class="feature-point">
-            <strong>Easy to scan</strong>
-            <p>The best picks show up early so you do not have to dig for them.</p>
-          </div>
-          <div class="feature-point">
-            <strong>Clear recommendation</strong>
-            <p>Each guide ends with one practical next step you can take right away.</p>
-          </div>
-          <div class="feature-point">
-            <strong>Useful visuals</strong>
-            <p>Images and clean cards make the ideas easier to understand at a glance.</p>
-          </div>
-          <div class="feature-point">
-            <strong>Helpful follow-up</strong>
-            <p>The weekly note keeps the best simple fixes coming without overwhelming you.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  `;
-}
+// Feature target removed — no matching [data-featured-solution] element in HTML
 
 /* Interactive Quick Problem Finder Quiz */
 const initQuiz = () => {
