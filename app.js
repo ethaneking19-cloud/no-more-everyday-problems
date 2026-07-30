@@ -282,3 +282,29 @@ const yearTarget = document.querySelector("[data-year]");
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
+
+/* Back to Top Button */
+(function initBackToTop() {
+  const btn = document.createElement("button");
+  btn.className = "back-to-top";
+  btn.setAttribute("aria-label", "Back to top");
+  btn.innerHTML = "&#8593;";
+  document.body.appendChild(btn);
+
+  let ticking = false;
+  const toggle = () => {
+    btn.classList.toggle("visible", window.scrollY > 500);
+    ticking = false;
+  };
+
+  window.addEventListener("scroll", () => {
+    if (!ticking) {
+      requestAnimationFrame(toggle);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
