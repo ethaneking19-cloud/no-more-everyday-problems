@@ -133,7 +133,7 @@ const featuredItems = [
     whyItWins: "Reusable for up to 2 years.",
     image: "images/charcoal_bags.jpg",
     category: "home"
-  }
+  },
   {
     key: "stained-shirts",
     title: "No More Stained Shirts",
