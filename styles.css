@@ -108,19 +108,9 @@ input {
 }
 
 .brand-logo {
-  height: 68px;
+  height: 60px;
   width: auto;
   display: block;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 3px 8px;
-  box-shadow: 0 4px 16px rgba(23, 38, 63, 0.08);
-  transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.brand-mark:hover .brand-logo {
-  box-shadow: 0 6px 20px rgba(23, 38, 63, 0.14);
-  transform: translateY(-1px);
 }
 
 .site-header {
@@ -147,6 +137,16 @@ input {
   gap: 0.9rem;
   font-weight: 800;
   letter-spacing: 0.02em;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 14px;
+  padding: 4px 12px;
+  box-shadow: 0 4px 16px rgba(23, 38, 63, 0.08);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.brand-mark:hover {
+  box-shadow: 0 6px 20px rgba(23, 38, 63, 0.14);
+  transform: translateY(-1px);
 }
 
 .brand-badge {
