@@ -828,6 +828,26 @@ input[type="email"] {
   font-weight: 700;
 }
 
+.article-byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.byline-author {
+  color: var(--ink);
+}
+
+.byline-date {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;

@@ -74,7 +74,7 @@ RELATED = {
 all_known = set(RELATED.keys())
 for page in pages:
     if page not in all_known:
-        print(f"  ℹ️  New page detected: {page} — using default related articles")
+        print(f"  [i] New page detected: {page} -- using default related articles")
         # Pick 3 other pages (not itself)
         others = [p for p in pages if p != page][:3]
         icons = ['🔑', '📦', '📱']
@@ -121,6 +121,6 @@ for filename in pages:
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(content)
         updated += 1
-        print(f"  ✅ Updated related articles in {filename}")
+        print(f"  [OK] Updated related articles in {filename}")
 
-print(f"\n✅ Done! Updated {updated} pages.")
+print(f"\n[DONE] Updated {updated} pages.")

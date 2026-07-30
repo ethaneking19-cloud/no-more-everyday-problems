@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418 168" fill="none">
+  <!-- Background pill -->
+  <rect x="4" y="14" width="410" height="140" rx="70" fill="#17263f"/>
+  <!-- Orange accent circle -->
+  <circle cx="74" cy="84" r="48" fill="#e76f51"/>
+  <!-- Exclamation mark -->
+  <text x="74" y="97" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="52" fill="#fffdf8">!</text>
+  <!-- Brand name -->
+  <text x="140" y="72" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="22" fill="#fffdf8">No More</text>
+  <text x="140" y="107" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="22" fill="#e76f51">Everyday</text>
+  <text x="140" y="140" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="18" fill="rgba(255,255,255,0.7)" letter-spacing="0.06em">PROBLEMS</text>
+</svg>

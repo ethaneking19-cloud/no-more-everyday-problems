@@ -134,8 +134,20 @@ const featuredItems = [
     image: "images/charcoal_bags.jpg",
     category: "home"
   }
+  {
+    key: "stained-shirts",
+    title: "No More Stained Shirts",
+    kicker: "Laundry lifesaver",
+    description: "Enzyme sprays, pre-treaters, and spot pens that lift stains before they set.",
+    href: "no-more-stained-shirts.html",
+    stat: "Kitchen & dining essential",
+    pair: "Stain Spray + Tide Pen",
+    audience: "Anyone who eats, drinks, or has kids",
+    whyItWins: "Saves favorite shirts from the trash.",
+    image: "images/stained_shirts_cover.jpg",
+    category: "home"
+  }
 ];
-
 const previewTarget = document.querySelector("[data-hero-preview]");
 const topicButtons = document.querySelectorAll("[data-topic-trigger]");
 
